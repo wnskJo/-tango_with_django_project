@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
-<html>
+{% block title_block %}
+    About
+{% endblock %}
 
-<head>
-    <title>Rango</title>
-</head>
-
-<body>
+{% block body_block %}
     <h1>About</h1>
     <div>
         This tutorial has been put together by Wonseok Cho <br />
@@ -18,6 +15,4 @@
         <img src="{{ MEDIA_URL }}cat.jpg" /> <!-- New line -->
         <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /> <!-- New line -->
     </div>
-</body>
-
-</html>
+{% endblock %}
